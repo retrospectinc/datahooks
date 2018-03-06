@@ -1,0 +1,40 @@
+Data Hooks enable you to create custom data visualizations or reports in your dashboard. When you write your own data hook, you have access to the same data that Retrospect uses for its dashboard: activities, backups, sets, and sources. You can even look out the standard shipping set of data hooks for reference or if you want to adapt them to your particular environment.
+
+Data Hooks are composed of HTML, CSS, and Javascript, in the following structure:
+
+----
+datahooks/
+  index.xml // This file identifies which data hooks to load and in what order.
+  widgets/
+    sample.plugin/
+      plugin.html
+      plugin.js
+      plugin.css
+      en/
+        plugin.html
+      es/
+        plugin.html
+      fr/
+        plugin.html
+      it/
+        plugin.html
+      ja/
+        plugin.html
+----
+
+Note that localization is supported but not required.
+
+Follow these steps to creating a new data hook:
+  
+. Visit our open-source repository for Data Hooks on GitHub: https://www.github.com/retrospectinc/datahooks.
+. Clone the repository to your Retrospect configuration folder. Retrospect will look in this folder for any layout changes or data hook changes, and those changes will override the standard data hooks that ship with Retrospect.
++
+----
+Windows: C:\ProgramData\Retrospect\datahooks\
+Mac: /Library/Application Support/datahooks/
+----
++
+. Create a new folder for your data hook: ```datahooks/widgets/name.plugin```.
+. Add your ```plugin.html```, ```plugin.js```, and ```plugin.css``` to the folder.
+. Add the name of the folder to the ```index.xml``` to ensure the data hook is loaded by Retrospect.
+. Re-launch Retrospect Console (for Mac) or Retrospect Dashboard (for Windows).
