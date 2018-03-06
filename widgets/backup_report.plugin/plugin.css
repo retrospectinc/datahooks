@@ -1,0 +1,12 @@
+
+table {text-transform:capitalize; }
+
+.backup_report .list_container .title {font-size: 110%;}
+
+.backup_report .list_container .title td:nth-child(1) {font-weight:bold;}
+.backup_report .list_container .title td:nth-child(2) {font-style:italic;}
+
+.backup_report .failed { color: #ff8e00; fill: #ff8e00;}
+.backup_report .success { color: #11a823; fill: #11a823;}
+.backup_report .stopped { color: #3d3d3d; fill: #3d3d3d;}
+.backup_report .unprotected { color: #cccccc; fill: #cccccc;}

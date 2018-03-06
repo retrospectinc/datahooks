@@ -1,0 +1,44 @@
+<div class="column_container">
+    <div class="box">
+        <h2>Backups</h2>
+        <div class="content">
+            <!-- Last 7 days of backups  -->
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="days_of_backups">
+                <tbody>
+                    <tr><!-- header with Files and Sources -->
+                        <td valign="top" class="sources header">
+                            <strong id="total_num_backups"></strong><br>
+                            <label>Backup in den letzten 7 Tagen</label>
+                        </td>
+                        <td valign="top" class="total_size_summary header">
+                            <strong id="total_size_summary"></strong><br>
+                            <label>Gesichert</label>
+                        </td>
+                    </tr>
+                    <tr> <!-- bottom section is for bar chart -->
+                        <td colspan="2">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="backups_by_day">
+                                <tbody>
+                                    <tr>
+                                        <td class="day"></td>
+                                        <td class="total_size"></td>
+                                        <td><!-- bar is a div of spans for each day's backups -->
+                                            <div class="daily_backups">
+                                                <div class="backup_box" style="width:<width>%">&nbsp;
+                                                    <div class="overlay tip_on_left">
+                                                        <div class="overlay_date" title="<source>"></div>
+                                                        <div class="overlay_info" title="<humanFiles> files | <humanBytes>"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div><!--box for last 7 days of backups-->
+</div><!-- column_container -->

@@ -1,0 +1,67 @@
+/* proactive styles */
+
+.proactive.content { overflow: hidden; } /* only .list_container scrolls */
+.proactive .large_icon {
+    width:58%;
+    display:inline-block;
+    vertical-align: top;
+    background-image:url(../../circle_check_green_512.png);
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+/* From enginehi_res.cpp */
+/*
+'Tga1', "Polling",
+'Tga2', "Idle",
+'Tga3', "Preparing to execute",
+'Tga4', "Executing",
+'Tga5', "Checking media",
+'Tga6', "Checking source",
+'Tga7', "Paused",
+'Tga8', "Inactive",
+'Tga9', "Waiting for storage media",
+'Tga:', "Deferred",
+ */
+
+.proactive .large_icon.Polling {background-image:url(../../circle_check_green_512.png);}
+.proactive .large_icon.Idle {background-image:url(../../circle_check_green_512.png);}
+.proactive .large_icon.Preparing {background-image:url(../../circle_check_green_512.png);}
+.proactive .large_icon.Executing {background-image:url(../../circle_check_green_512.png);}
+.proactive .large_icon.Checking.media {background-image:url(../../circle_check_green_512.png);}
+.proactive .large_icon.Checking.source {background-image:url(../../circle_check_green_512.png);}
+.proactive .large_icon.Paused {background-image:url(../../triangle_orange_512.png);}
+.proactive .large_icon.Inactive {background-image:url(../../circle_no_gray_512.png);}
+.proactive .large_icon.Waiting {background-image:url(../../circle_no_gray_512.png);}
+.proactive .large_icon.Deferred {background-image:url(../../circle_no_gray_512.png);}
+
+.proactive .list_container {
+    display: inline-block;
+    vertical-align: top;
+    overflow: auto;
+    width:40%;
+    height: 100%;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.proactive .list_container table {
+    width: 100%;
+    table-layout: fixed;
+}
+.proactive thead th {font-size:14px;color:#666;text-align:center;font-style:italic;}
+
+.proactive .icon {background-image:url(../../question_black.png);background-size:16px;}
+.proactive .icon.unknown {background-image:url(../../question_black.png);}
+.proactive .icon.in_progress {background-image:url(../../check_black.png);}
+.proactive .icon.preparing {background-image:url(../../check_black.png);}
+.proactive .icon.waiting_media {background-image:url(../../circle_clock_black.png);}
+.proactive .icon.waiting_retry {background-image:url(../../circle_clock_black.png);}
+.proactive .icon.waiting_next {background-image:url(../../check_black.png);}
+.proactive .icon.deferred {background-image:url(../../circle_clock_black.png);}
+.proactive .icon.inactive {background-image:url(../../circle_clock_black.png);}
+.proactive .icon.waiting_source {background-image:url(../../question_black.png);}
+.proactive .icon.fatal {background-image:url(../../triangle_exclam_black.png);}
+.proactive .icon.script_busy {background-image:url(../../question_black.png);}
+.proactive .icon.waiting_execution {background-image:url(../../question_black.png);}
+.proactive .icon.source_busy {background-image:url(../../question_black.png);}
+.proactive .icon.media_busy {background-image:url(../../question_black.png);}

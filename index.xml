@@ -1,0 +1,47 @@
+<?xml version='1.0'?>
+<RetrospectDatahooks
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://www.retrospect.com/RetrospectDatahooks_v1_0.xsd"
+    version="1.0">
+    <toolbarPlugins>
+        <plugin>
+            <name>relaunch_toolbar.plugin</name>
+        </plugin>
+        <plugin>
+            <name>support_toolbar.plugin</name>
+        </plugin>
+        <plugin>
+            <name>print_toolbar.plugin</name>
+        </plugin>
+    </toolbarPlugins>
+    <widgetPlugins>
+        <!-- Plugins will be listed in the order below -->
+        <plugin>
+            <name>activities.plugin</name>
+        </plugin>
+        <plugin>
+            <name>proactive.plugin</name>
+        </plugin>
+        <plugin>
+            <name>backup_report.plugin</name>
+        </plugin>
+        <plugin>
+            <name>backups_by_day.plugin</name>
+        </plugin>
+        <plugin>
+            <name>recent_backups.plugin</name>
+        </plugin>
+        <plugin>
+            <name>oldest_backups.plugin</name>
+        </plugin>
+        <plugin>
+            <name>storage_map.plugin</name>
+        </plugin>
+        <plugin>
+            <name>storage.plugin</name>
+        </plugin>
+        <plugin>
+            <name>storage_predictions.plugin</name>
+        </plugin>
+    </widgetPlugins>
+</RetrospectDatahooks>

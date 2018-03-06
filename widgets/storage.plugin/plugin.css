@@ -1,0 +1,20 @@
+/* storage_list styles */
+
+.storage_list tbody tr {width:100%;line-height:14px;font-size:12px;color:#666;text-align:left;}
+.storage_list .storage_name {color:#333;font-weight:bold;}
+.storage_list .progress_bar {border:1px solid #888;display:block;}
+.storage_list .bar {height:100%;background-color:#8be;}
+.storage_list .warning .bar {background-color:#f80}
+.storage_list .used_column {text-align:right;}
+
+@media screen and (max-width: 1400px) {
+    .storage_list .modified_column {
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    .storage_list .bar_column,
+    .storage_list .total_column {
+        display: none;
+    }
+}

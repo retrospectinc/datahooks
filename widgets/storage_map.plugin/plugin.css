@@ -1,0 +1,51 @@
+/*
+    sunburst.css
+    
+    Styling for the sunburst widget.
+    
+*/
+
+.sunburst.content { overflow: hidden; } /* only .list_container scrolls */
+
+.sunburst svg {
+  width:58%;
+  display:inline-block;
+  vertical-align: top;
+}
+.sunburst .list_container {
+  display: inline-block;
+  vertical-align: top;
+  overflow: auto;
+  width:40%;
+}
+.sunburst .list_container table { width:100%; cursor:pointer;table-layout:fixed}
+.sunburst .list_container tr:hover { background: rgba(0,0,0,0.1);}
+.sunburst .list_container td { padding-bottom: 0.2em;font-size:12px}
+.sunburst .list_container td:nth-child(1) {overflow:hidden; text-overflow:ellipsis; white-space: pre; width:70%}
+.sunburst .list_container td:nth-child(2) {text-align: right;width:4em;}
+.sunburst .list_container .title {font-size: 110%;}
+.sunburst svg circle {
+  fill:transparent;
+}
+.sunburst svg text {
+  stroke: black;
+}
+.sunburst path {
+  stroke: white;
+  stroke-width: 6px;
+}
+.sunburst path.alert {
+  fill: hsl(0, 100%, 50%); /* red, no white level */
+}
+.sunburst path.warning {
+  fill: hsl(37, 100%, 50%); /* amber, no white level */
+}
+.sunburst .summary text {
+  /* text in center disk */
+  fill: black;
+  font-size:8em;
+  font-weight: 200;
+}
+.sunburst .summary text:nth-child(3) {
+  font-size:6em; /* Make KB, etc. label smaller */
+}

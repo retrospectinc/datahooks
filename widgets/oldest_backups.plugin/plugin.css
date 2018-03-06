@@ -1,0 +1,6 @@
+/* backups_list styles (for recent and never backed up) */
+.backups_list {display:inline-block;}
+.backups_list tbody {width:100%;display:inline-table;max-height:4em;overflow:scroll;}
+.backups_list .source {color:#333;}
+.backups_list .backup_date {color:#666;margin-left:1em;}
+

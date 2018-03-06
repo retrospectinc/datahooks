@@ -1,0 +1,32 @@
+<div class="column_container">
+    <div class="box">
+        <h2>Archiviazione</h2>
+        <div class="content">
+            <table width="100%" border="0" cellspacing="2" cellpadding="0" style="display:inline-table;" class="storage_list">
+                <thead>
+                    <tr>
+                        <th class="set_column">Nome</th>
+                        <th class="modified_column">Modificato</th>
+                        <th class="used_column">Utilizzati</th>
+                        <th class="bar_column">% Utilizzati</th>
+                        <th class="total_column">Totale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="empty_placeholder">
+                        <td colspan="5">Nessuno</td>
+                    </tr>
+                    <tr class="template">
+                        <td class="set_column"><span class="icon <storage_type>"></span><span class="storage_name"></span></td>
+                        <td align="left" class="modified_column backup_date"></td>
+                        <td class="used_column size_used_human"></td>
+                        <td class="bar_column progress_bar" title="<storage_name>: <percent_used>% of <total_capacity_human>">
+                            <div class="bar" style="width:<percent_used>%;">&nbsp;</div>
+                        </td>
+                        <td class="total_column total_capacity_human"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+	</div><!--box for storage -->
+</div><!-- column_container -->

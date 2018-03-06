@@ -1,0 +1,5 @@
+.storage_predictions .past_used { display:none; }
+.storage_predictions th { text-align:center; }
+.storage_predictions th.set_column { text-align: left; }
+.storage_predictions .warning { color: #FF8E00 }
+.storage_predictions .error { color: #aa0000 }

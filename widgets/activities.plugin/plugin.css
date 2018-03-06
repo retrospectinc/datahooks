@@ -1,0 +1,30 @@
+/* activities styles */
+
+.activities_list {
+    min-height:11em;
+}
+.activities_list .activity {overflow:hidden;text-overflow:ellipsis;white-space: nowrap;border-bottom:1px solid #eee;padding-bottom:.5em;margin-bottom:.5em;}
+.activities_list .activity:last-child {margin-bottom:0;padding-bottom:0;border-bottom:none;}
+.activities_list .activity_icon {
+    float:left;
+    width:32px !important;
+    height:4em !important;
+    margin-top:1em;
+}
+.activities_list .activity_box {
+    width:auto;
+}
+.activities_list .activity_box .activity_top,
+.activities_list .activity_box .activity_mid,
+.activities_list .activity_box .activity_bottom {height:1.5em;}
+.activities_list .activity_box .activity_bottom {margin-top:.25em; margin-left:32px; }
+.activities_list .activity_box .script_name {width: auto; font-weight:bold;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.activities_list .activity_box .source_name {width: 12em; float:right;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.activities_list .activity_box .progress_text {width: auto;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.activities_list .activity_box .destination_name {width: 12em; float:right;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+.activities_list .activity_mid .icon {
+    float:right;width:16px;padding:0;margin-left:.25em;top:-1px;
+    text-indent:100%;white-space:nowrap;overflow:hidden; /* for text replacement */
+}
+.activities_list .activity_box .progress_bar {margin-left:40px;margin-right:40px;border:1px solid #888;;display:block; height:12px;}
+.activities_list .activity_box .bar {height:100%;background-color:#8be;}

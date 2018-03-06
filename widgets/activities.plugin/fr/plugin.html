@@ -1,0 +1,33 @@
+<!-- Activities Plugin -->
+<div class="column_container">
+    <div class="box">
+        <h2>Activités</h2>
+		<div class="activities_list content">
+            <div class="empty_placeholder">Aucun</div>
+            <div class="activity template">
+                <div class="<activity_type> activity_icon icon">&nbsp;</div>
+                <div class="activity_box">
+                    <div class="activity_top">
+                        <div class="source_name"></div>
+                        <div class="script_name"></div>
+                    </div>
+                    <div class="activity_mid">
+                        <a href="#" class="stop icon" id="stop_<activity_id>">Arrêter</a>
+                        <a href="#" class="<pause_or_run> pause_or_run icon" id="pause_<activity_id>"></a>
+                        <div class="progress_bar">
+                            <div class="bar" style="width:<percent_copied>%;">&nbsp;</div>
+                        </div>
+                    </div>
+                        <div class="<show_status> status"></div>
+                        <div class="<show_media_request> media_request"><span class="<media_request_icon> icon"></span>Le script <span class="request_op"></span> requiert <span class="request_member"></span></div>
+                        <div class="activity_bottom">
+                            <div class="destination_name"></div>
+                            <div class="progress_text">(<span class="files_copied"></span> sur <span class="files_total"></span>)
+                                <span class="files_remaining"></span> fichiers restants.</div>
+                        </div>
+                    </div><!-- activity_box -->
+                </div><!-- activity_box -->
+            </div><!-- activity -->
+		</div><!-- activities_list -->
+	</div><!--box for activities -->
+</div><!-- column_container -->
