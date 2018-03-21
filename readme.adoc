@@ -31,7 +31,7 @@ Follow these steps to creating a new data hook:
 +
 ----
 Windows: C:\ProgramData\Retrospect\datahooks\
-Mac: /Library/Application Support/datahooks/
+Mac: /Library/Application Support/Retrospect/datahooks/
 ----
 +
 . Create a new folder for your data hook: ```datahooks/widgets/name.plugin```.
